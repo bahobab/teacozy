@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  background-color: black;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid seashell;
+}
+
+/*header h3 {
+  margin-left: 10px;
+}*/
+
+#logo {
+  height: 50px;
+  position: relative;
+}
+
+#logo img {
+  /*width: 100%;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  width: 170px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header ul li a {
+  margin-right: 10px;
+  color: seashell;
+}
+
+#jumbotron {
+  /*width: 1200px;*/
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  height: 700px;
+  /*position: relative;*/
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/img-mission-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.mission {
+  /*text-align: center;*/
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  padding-bottom: 10px;
+}
+
+.mission h2, .mission p {
+  /*position: relative;*/
+  margin: 0 auto;
+}
+
+.content.products {
+  /*width: 1000px;*/
+  width: 90%;
+  margin: 30px auto;
+}
+
+#products {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*flex-direction: row;*/
+  margin: 0 auto;
+  /*padding-top: 20px;*/
+}
+
+.teaofthemonth {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  height: 130px;
+}
+
+.product figure {
+  /*display: inline-block;*/
+  margin: 10px 10px;
+}
+
+figcaption {
+}
+
+.product img {
+  height: 200px;
+  width: 300px;
+}
+
+.content.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  background-image: url(../images/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+#locations {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  height: 80%;
+}
+
+.location {
+  flex: 1 300px;
+  margin: 15px 20px;
+  /*opacity: 1;*/
+  background-color: rgba(0,0,0,1);
+  /*height: 100%;*/
+}
+
+.location-detail {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#company {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  text-align: left;
+  font-size: 15px;
+  margin: 10px 0 20px 20px;
+}
+
+@media screen and (max-width: 600px) { /* 768px */
+  header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  header ul li a {
+    /*margin: 0 0;*/
+    font-size: 16px;
+  }
+
+  #logo img {
+    margin: 0 0;
+    position: static;
+    height: 30px;
+    width: 90px;
+  }
+
+  #locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+  }
+
+  #company {
+    height: 100px;
+  }
+}
